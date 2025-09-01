@@ -2,15 +2,14 @@ users:
   - name: openproject
     password: $POSTGRESQL_OPENPROJECT_PASSWORD
     role: superuser
+
 databases:
   - name: openproject
     owner: openproject
     tablespace:
-      - name: tb1
-        location: /appz/data/tb1
+      - name: tbl
+        location: /appz/data/tbl
     schemas:
       - name: schema1
         authorised_user: openproject
         search_path: true
-
- 
